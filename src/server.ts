@@ -1,5 +1,5 @@
 import express from "express";
-import trafficRoute from "./routes/trafficRoute.js";
+import TrafficRoute from "./routes/TrafficRoute.js";
 import cors from "cors";
 
 // We will create an express app
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // We define our first route
-app.use("/api/traffic", trafficRoute);
+app.use("/api/Traffic", TrafficRoute);
 
 // Start the express server
 app.listen(PORT, () => {

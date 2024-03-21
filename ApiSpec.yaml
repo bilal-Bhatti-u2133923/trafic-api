@@ -1,23 +1,23 @@
 openapi: 3.0.0
 info:
-  title: traffic API
+  title: Traffic API
   version: 1.0.0
-  description: A simple API to fetch traffic information for a specific city
+  description: A simple API to fetch Traffic information for a specific city
 servers:
   - url: http://localhost:3000/api
     description: Local server
 paths:
-  /traffic/{city}:
+  /Traffic/{city}:
     get:
-      summary: Get traffic data for a city
-      description: Fetches traffic data for the specified city.
+      summary: Get Traffic data for a city
+      description: Fetches Traffic data for the specified city.
       parameters:
         - in: path
           name: city
           required: true
           schema:
             type: string
-          description: City for which to fetch the traffic
+          description: City for which to fetch the Traffic
       responses:
         '200':
           description: Successful response
@@ -26,9 +26,9 @@ paths:
               schema:
                 type: object
                 properties:
-                  traffic:
+                  Traffic:
                     type: number
-                    description: Current traffic.
+                    description: Current Traffic.
                     example: 20
                   humidity:
                     type: number

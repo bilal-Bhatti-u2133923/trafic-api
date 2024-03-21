@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import {
   generateDublinTraficData,
   generateLondonTraficData,
-} from "../services/TraficService.ts";
+} from "../services/TraficService.js";
 import { validationResult } from "express-validator";
 
 /**

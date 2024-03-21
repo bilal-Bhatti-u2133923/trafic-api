@@ -30,9 +30,9 @@ paths:
                     type: number
                     description: Current Traffic.
                     example: 20
-                  humidity:
+                  rain:
                     type: number
-                    description: Current humidity.
+                    description: Current rain.
                   wind:
                     type: number
                     description: Current wind.

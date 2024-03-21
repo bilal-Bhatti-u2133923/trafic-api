@@ -1,5 +1,5 @@
 import express from "express";
-import weatherRoute from "./routes/TraficRoute.js";
+import TraficRoute from "./routes/TraficRoute.js";
 import cors from "cors";
 
 // We will create an express app
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // We define our first route
-app.use("/api/weather", weatherRoute);
+app.use("/api/Trafic", TraficRoute);
 
 // Start the express server
 app.listen(PORT, () => {

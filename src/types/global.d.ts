@@ -1,4 +1,4 @@
-interface WeatherData {
+interface TraficData {
   city:string;
   temperature: number;
   humidity: number;

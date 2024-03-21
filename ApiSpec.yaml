@@ -1,23 +1,23 @@
 openapi: 3.0.0
 info:
-  title: Weather API
+  title: Trafic API
   version: 1.0.0
-  description: A simple API to fetch weather information for a specific city
+  description: A simple API to fetch Trafic information for a specific city
 servers:
   - url: http://localhost:3000/api
     description: Local server
 paths:
-  /weather/{city}:
+  /Trafic/{city}:
     get:
-      summary: Get weather data for a city
-      description: Fetches weather data for the specified city.
+      summary: Get Trafic data for a city
+      description: Fetches Trafic data for the specified city.
       parameters:
         - in: path
           name: city
           required: true
           schema:
             type: string
-          description: City for which to fetch the weather
+          description: City for which to fetch the Trafic
       responses:
         '200':
           description: Successful response

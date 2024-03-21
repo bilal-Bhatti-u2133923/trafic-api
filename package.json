@@ -1,7 +1,7 @@
 {
-  "name": "Trafic_api",
+  "name": "traffic_api",
   "version": "1.0.0",
-  "description": "The Trafic API",
+  "description": "The traffic API",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <21"

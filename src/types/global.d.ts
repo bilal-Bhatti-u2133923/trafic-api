@@ -1,6 +1,6 @@
-interface TraficData {
+interface trafficData {
   city:string;
-  temperature: number;
+  traffic: number;
   humidity: number;
   wind: number;
   rain: number;

@@ -1,7 +1,7 @@
 import algosdk from "algosdk";
  import { getClient, getAccount } from "../config/config.js";
 
- export const storeTraficData = async (data: TraficData): Promise<void> => {
+ export const storetrafficData = async (data: trafficData): Promise<void> => {
  try {
  const client = getClient();
  const account = getAccount();
@@ -22,6 +22,6 @@ import algosdk from "algosdk";
 
  console.log("Transaction ID:", sendTxn.txId);
  } catch (error) {
- console.error("Failed to store Trafic data:", error);
+ console.error("Failed to store traffic data:", error);
  }
  };

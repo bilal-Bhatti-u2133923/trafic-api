@@ -1,10 +1,10 @@
-# Trafic API
+# traffic API
 
-This Trafic API is built using Node.js and Express, and it's designed to fetch Trafic data for a specified city. It's a simple demonstration of creating and deploying RESTful APIs with a service layer architecture, using TypeScript for improved code reliability.
+This traffic API is built using Node.js and Express, and it's designed to fetch traffic data for a specified city. It's a simple demonstration of creating and deploying RESTful APIs with a service layer architecture, using TypeScript for improved code reliability.
 
 ## Features
 
-- Fetch Trafic data for any city.
+- Fetch traffic data for any city.
 - Implemented using Node.js, Express, and TypeScript.
 - API documentation using Swagger (OpenAPI Specification).
 - Test API endpoints with Postman.
@@ -14,8 +14,8 @@ This Trafic API is built using Node.js and Express, and it's designed to fetch T
 To get started with this project, clone the repository and install the dependencies.
 
 ```bash
-  git clone https://github.com/your-username/Trafic-api.git
-  cd Trafic-api
+  git clone https://github.com/your-username/traffic-api.git
+  cd traffic-api
 ```
 
 Now install the dependencies.
@@ -26,7 +26,7 @@ Now install the dependencies.
 
 ## Run in Development
 
-To run the Trafic API in a development environment, follow these steps:
+To run the traffic API in a development environment, follow these steps:
 
 Start the TypeScript Compiler in Watch Mode:
 
@@ -50,7 +50,7 @@ This setup allows you to actively develop and test your application with live up
 
 ## Run Locally
 
-For local running of the Trafic API, especially in a production-like environment, follow these steps:
+For local running of the traffic API, especially in a production-like environment, follow these steps:
 
 Compile the TypeScript files to JavaScript.
 

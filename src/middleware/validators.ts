@@ -7,7 +7,7 @@ import { param } from "express-validator";
  * router.get(
  *  "/:city",
  * validateCityName,
- * getTraficData
+ * gettrafficData
  * );
  */
 export const validateCityName = param("city")

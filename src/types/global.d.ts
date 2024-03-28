@@ -3,5 +3,5 @@ interface TrafficData {
   Traffic: number;
   rain: number;
   wind: number;
-  rain: number;
+  sun: number;
 }

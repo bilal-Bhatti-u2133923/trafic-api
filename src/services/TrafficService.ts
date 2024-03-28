@@ -8,7 +8,7 @@ export const generateLondonTrafficData = (): TrafficData => {
     Traffic: faker.number.int({ min: 0, max: 100 }),
     rain: faker.number.int({ min: 20, max: 90 }),
     wind: faker.number.int({ min: 2, max: 78 }),
-    sport: faker.number.int({ min: 65, max: 75 }),
+    sun: faker.number.int({ min: 65, max: 75 }),
   };
 
   storeTrafficData(generatedTrafficData).catch(console.error)
@@ -24,7 +24,7 @@ export const generateDublinTrafficData = (): TrafficData => {
     Traffic: faker.number.int({ min: 0, max: 100 }),
     rain: faker.number.int({ min: 20, max: 90 }),
     wind: faker.number.int({ min: 2, max: 78 }),
-    sport : faker.number.int({ min: 65, max: 75 }),
+    sun: faker.number.int({ min: 65, max: 75 }),
   };
 
   storeTrafficData(generatedTrafficData).catch(console.error)

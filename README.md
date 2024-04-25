@@ -15,3 +15,8 @@ Start the server
 ```bash
   npm run start
 ```
+ 
+
+ do week 7 
+
+ then week 10

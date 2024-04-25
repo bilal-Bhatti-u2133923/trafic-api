@@ -19,7 +19,7 @@ export const generateLondonTrafficData = (): TrafficData => {
 
 export const generateDublinTrafficData = (): TrafficData => {
   // Generate random Traffic data
-  const generatedTrafficData: TrafficData = {
+  const generatedTrafficData = {
     city: "Dublin",
     Traffic: faker.number.int({ min: 0, max: 100 }),
     rain: faker.number.int({ min: 20, max: 90 }),

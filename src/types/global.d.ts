@@ -1,5 +1,5 @@
 interface TrafficData {
-  city:string;
+  city: string;
   Traffic: number;
   rain: number;
   wind: number;
@@ -7,6 +7,6 @@ interface TrafficData {
 }
 
 interface gameData {
-  icon:string;
-  iconName:string;
+  icon: string;
+  iconName: string;
 }

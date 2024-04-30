@@ -51,5 +51,5 @@ export const getTrafficData = async (req: Request, res: Response) => {
 
 export const gaeaadata = async (_req: Request, res: Response) => {
   // We will use the validationResult function to check if there are any validation errors
-  res.send("kafkajfkafaksfjaskjaskfW")
+  res.send("kafkajfkafaksfjaskjaskfW");
 };

@@ -1,6 +1,7 @@
 import express from "express";
 import TrafficRoute from "./routes/TrafficRoute.js";
 import heatrBeat from "./routes/heatrBeat.js"
+import gameRoute from "./routes/gameRoute.js"
 import cors from "cors";
 
 // We will create an express app
@@ -15,6 +16,8 @@ app.use(express.json());
 // We define our first route
 app.use("/api/traffic", TrafficRoute);
 app.use("/api/heartbeat", heatrBeat);
+app.use("/api/game", gameRoute);
+
 
 // Start the express server
 app.listen(PORT, () => {

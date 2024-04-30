@@ -11,7 +11,7 @@ export const generateLondonTrafficData = (): TrafficData => {
     sun: faker.number.int({ min: 1, max: 11 }),
   };
 
-  storeTrafficData(generatedTrafficData).catch(console.error)
+  storeTrafficData(generatedTrafficData).catch(console.error);
 
   // Return Traffic data
   return generatedTrafficData;
@@ -27,7 +27,7 @@ export const generateDublinTrafficData = (): TrafficData => {
     sun: faker.number.int({ min: 1, max: 11 }),
   };
 
-  storeTrafficData(generatedTrafficData).catch(console.error)
+  storeTrafficData(generatedTrafficData).catch(console.error);
 
   // Return Traffic data
   return generatedTrafficData;

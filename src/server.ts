@@ -1,6 +1,6 @@
 import express from "express";
 import TrafficRoute from "./routes/TrafficRoute.js";
-import utilRoute from "./routes/utilRoute.js"
+import heatrBeat from "./routes/heatrBeat.js"
 import cors from "cors";
 
 // We will create an express app
@@ -14,7 +14,7 @@ app.use(express.json());
 
 // We define our first route
 app.use("/api/traffic", TrafficRoute);
-app.use("/api/heartbeat", utilRoute);
+app.use("/api/heartbeat", heatrBeat);
 
 // Start the express server
 app.listen(PORT, () => {

@@ -1,5 +1,5 @@
 import express from "express";
-import { getHeart } from "../controllers/utilController.js";
+import { getHeart } from "src/controllers/heatrBeatController.ts"; 
 
 // We will create a router object
 const router = express.Router();

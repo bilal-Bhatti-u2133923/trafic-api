@@ -5,14 +5,33 @@ import {
   generateplaneGameData,
   generaterainGameData,
 } from "../services/game.js";
+import { validationResult } from "express-validator";
 
-// ...  Other controller functions you may have ...
+/**
+ * Gets the Traffic data for a city
+ * @param req the request object
+ * @param res the response object
+ */
 
 export const getGameData = async (req: Request, res: Response) => {
+
+
+  const errors = validationResult(req);
+
+  // If there are validation errors, we will log them and send a 400 status code
+  if (!errors.isEmpty()) {
+    console.error("Validation error", errors.mapped());
+    res.status(400).json({ errors: errors.array() });
+    return;
+  }
+
+
+
+
   try {
     const { usernumber } = req.params;
 
-    let finalGameData;
+    let finalGameData: gameData;
 
     if (usernumber === "1") {
       finalGameData = generateFlagGameData();
@@ -23,7 +42,7 @@ export const getGameData = async (req: Request, res: Response) => {
     } else if (usernumber === "4") {
       finalGameData = generateplaneGameData();
     } else {
-      res.status(404).send("question not found");
+      res.status(404).send("question not found puck a number from 1 to 4");
     }
 
     res.status(200).json(finalGameData);

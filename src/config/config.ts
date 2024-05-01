@@ -5,7 +5,7 @@ import algosdk from "algosdk";
  const port: string = "4001";
 
  const mnemonic: string =
- "luxury kangaroo artist desert dish various dove second spare together chat grocery slight speed find leg helmet nest program caught proud fun intact abstract horse";
+ "fame then analyst broccoli ice picnic output panic ignore goose gold jelly opinion organ clinic base unknown fossil metal unaware reward mansion boss abandon switch";
 
  export function getClient(): algosdk.Algodv2 {
  let client = new algosdk.Algodv2(algodToken, server, port);
